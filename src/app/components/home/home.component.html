@@ -3,7 +3,20 @@
         <h1 class="display-4">Comic App</h1>
         <p class="lead">
             Aplicación web de practica para SPA con Angular. <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur dignissimos nemo eos, voluptatibus quis. At quam id nam, nobis, quo pariatur ad qui tempora illo officia nesciunt, sunt laboriosam?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur dignissimos nemo eos,
+            voluptatibus quis. At quam id nam, nobis, quo pariatur ad qui tempora illo officia nesciunt, sunt
+            laboriosam?
         </p>
     </div>
+</div>
+
+<div class="row">
+    
+        <div class="col-12 col-sm-4 col-md m-1 m-sm-0 m-md-1 card animated fadeIn" *ngFor="let heroe of heroes; let i = index">
+            <img [src]="heroe.img" class="card-img-top" [alt]="heroe.img" />
+            <div class="">
+                <p class="card-title text-center">{{ heroe.nombre }}</p>
+            </div>
+        </div>
+  
 </div>
